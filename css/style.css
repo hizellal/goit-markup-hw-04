@@ -430,7 +430,7 @@ img {
                 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.app-info-block:hover {
+.app-info-block:hover .apps-info-p {
     transform: translateY(0%);
 }
 
