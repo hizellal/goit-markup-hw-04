@@ -306,7 +306,7 @@ img {
 
 .lists-icon {
     display: flex;
-    gap: 4px;
+    gap: 24px;
     flex-shrink: 0;
     align-self: flex-end;
 }
