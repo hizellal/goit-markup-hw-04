@@ -75,9 +75,6 @@ img {
 .header-logo {
     padding: 24px 0;
     margin-right: 76px;
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
   
 .header-logo .logo-part {
@@ -92,6 +89,12 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
   
 .nav-link {
@@ -162,7 +165,7 @@ img {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-section {
@@ -275,6 +278,9 @@ img {
 
 .team-info .team-info-blocks .info-block {
     background: #fff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
@@ -305,6 +311,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-info-blocks {
@@ -327,28 +334,40 @@ img {
 
 .lists-icon {
     display: flex;
+    justify-content: center;
     gap: 24px;
-    flex-shrink: 0;
-    align-self: flex-end;
+}
+
+.lists-icon .list-icon {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    width: 40px;
+    height: 40px;
+    /*border-radius: 50%;
+    background-color: #4d5ae5;*/
 }
 
 .lists-icon .social-iconbg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lists-icon .social-iconbg:hover {
-    background-color: #fff;
+    background-color: #404bbf;
+}
+
+.lists-icon .social-iconbg:focus {
+    background-color: #404bbf;
 }
 
 .lists-icon .social-icon {
-    fill: none;
-    stroke: #fff;
+    fill: #f4f4fd;
 }
 
 .lists-icon .social-icon:hover {
