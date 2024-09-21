@@ -1,0 +1,470 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #fff;
+    color: #434455;
+}
+
+ul, ol {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+/* common */
+  
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* header */
+  
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+  
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1158px;
+    margin: 0 auto;
+}
+  
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+  
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+  
+.header-logo .logo-part {
+    color: #2e2f42;
+}
+  
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+  
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+  
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+  
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+  
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+  
+.contacts-link {
+    display: block;
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+  
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+/* end header */
+
+/* first section */
+
+.main-btn {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/office.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.main-section .title-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: #404BBF;
+}
+
+/* end of first section */
+
+/* second section */
+
+.portfolio-info {
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    max-width: 496px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.portfolio-padding {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.portfolio-lists {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.portfolio-list {
+    width: calc((100% - 72px) / 4);
+}
+
+.portfolio-list:hover {
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.portfolio-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+}
+
+/* end of second section */
+
+/* third section */
+
+.team-info {
+    background: #f4f4fd;
+    padding: 120px 0;
+}
+
+.team-info .team-info-blocks .info-block {
+    background: #fff;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+
+.team-info-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 32px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-padding {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.team-info-blocks {
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+    gap: 24px;
+}
+
+.info-block {
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    text-align: center;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.people-info {
+    padding: 32px 0;
+}
+
+.lists-icon {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.lists-icon .social-iconbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.lists-icon .social-iconbg:hover {
+    background-color: #fff;
+}
+
+.lists-icon .social-icon {
+    fill: none;
+    stroke: #fff;
+}
+
+.lists-icon .social-icon:hover {
+    background-color: #03a9f4;
+}
+
+/*
+
+.social-accounts {
+    width: 232px;
+    padding-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.social-lists {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+*/
+
+/* end of third section */
+
+/* firth section */
+
+.apps-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.apps-info-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.apps-padding {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.apps-info-blocks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px; 
+}
+
+.apps-info {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.app-speciality {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+/* end of firth section */
+
+/* footer */
+
+.foot {
+    background: #2e2f42;
+    padding: 100px 0 100px;
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4d5ae5;
+    line-height: 117%;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.text-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f4f4fd;
+    letter-spacing: 0.02em
+}
+
+/* end of footer */
+
+/* div on the future 
+
+<div class="social-accounts">
+    <ul class="social-lists">
+            <li class="social-list">
+            <img src="images\Instagram.jpg" 
+            width="40"
+            height="40"
+            alt="Mark Guerrero image" 
+            />
+        </li>
+        <li class="social-list">
+            <img src="images\Twitter.jpg" 
+            width="40"
+            height="40"
+            alt="Mark Guerrero image" 
+            />
+        </li>
+        <li class="social-list">
+            <img src="images\Facebook.jpg" 
+            width="40"
+            height="40"
+            alt="Mark Guerrero image" 
+            />
+        </li>
+        <li class="social-list">
+            <img src="images\Linkedin.jpg" 
+            width="40"
+            height="40"
+            alt="Mark Guerrero image" 
+            />
+        </li>
+    </ul>
+</div>
+*/
